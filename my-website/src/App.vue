@@ -1,15 +1,15 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HomeView/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomeView from './components/HomeView.vue'  // 更新引用到你的 Home 组件
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HomeView  // 使用 Home 组件
   }
 }
 </script>

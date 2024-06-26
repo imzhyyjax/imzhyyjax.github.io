@@ -14,11 +14,29 @@
       </div>
     </div>
     <footer class="footer">
-      <p>Phone: 123-456-7890</p>
-      <p>Email: info@mysite.com</p>
-      <div class="social-media">
-        <a href="https://linkedin.com">LinkedIn</a>
-        <a href="https://twitter.com">Twitter</a>
+      <div class="footer-item">
+        <p class="footer-title">Phone</p>
+        <p>+853 6891 0274</p>
+        <p>+86 177 6596 0274</p>
+      </div>
+      <div class="footer-item">
+        <p class="footer-title">WeChat</p>
+        <p>imzhyyjax</p>
+      </div>
+      <div class="footer-item">
+        <p class="footer-title">Email</p>
+        <p>heyiyizhu@gmail.com</p>
+      </div>
+      <div class="footer-item">
+        <p class="footer-title">Follow Me</p>
+        <div class="social-media">
+          <a href="https://github.com/imzhyyjax" target="_blank">
+            <font-awesome-icon :icon="['fab', 'github']" />
+          </a>
+          <a href="https://www.linkedin.com/in/%E4%BD%95%E5%A5%95%E5%A5%95-%E6%9C%B1-295a32158" target="_blank">
+            <font-awesome-icon :icon="['fab', 'linkedin']" />
+          </a>
+        </div>
       </div>
     </footer>
   </div>
@@ -44,7 +62,7 @@ export default {
   align-items: center;  /* 垂直居中对齐 */
   justify-content: center;  /* 水平居中对齐 */
   text-align: left;  /* 让文本左对齐 */
-  margin-top: 50px; /* 调整顶部距离 */
+  margin-top: 250px; /* 调整顶部距离 */
 }
 
 .profile-photo {
@@ -93,15 +111,39 @@ export default {
 }
 
 .footer {
-  margin-top: 40px;
-  font-size: 14px;
-  color: #777;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 250px;
+  position: relative;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; /* 调整为你想要的宽度 */
+  border-top: 1px solid #ccc; /* 灰色的顶部边框 */
+}
+
+.footer-item {
+  text-align: left;
+  margin: 12px 0; /* 增加项之间的间距 */
+}
+
+.footer-title {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .social-media a {
-  margin: 0 10px;
+  margin:0 1.55px;
   color: #333;
   text-decoration: none;
+  font-size: 21px; /* 调整图标大小 */
 }
 
 .social-media a:hover {

@@ -129,6 +129,7 @@ export default {
   border-top: 1px solid #ccc; /* 灰色的顶部边框 */
 }
 
+
 .footer-item {
   text-align: left;
   margin: 12px 0; /* 增加项之间的间距 */

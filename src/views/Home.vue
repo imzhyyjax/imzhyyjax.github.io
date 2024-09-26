@@ -109,19 +109,21 @@ home {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 10px; /* 为小屏幕添加一些左右的内边距，防止贴边 */
+    padding: 20px; /* 为小屏幕添加一些左右的内边距，防止贴边 */
     box-sizing: border-box; /* 确保内边距不会影响宽度 */
   }
   .profile-photo{
-    width: 250px;
-    height: 250px;
-    align-items: center;
-    margin-top: 150px;
+    width: 200px;
+    height: 200px;
+    align-self: flex-start; /* 确保图片靠左 */
+    margin-top: 240px;
+    margin-left: 20px;
+    object-fit: cover;
   }
   .hello{
     font-weight: bolder;
     font-size: 70px;
-    margin-top: 80px;
+    margin-top: 30px;
     align-content: center; /* 居中对齐 */
   }
   /* 确保标题和文字不超出屏幕宽度 */
@@ -150,7 +152,7 @@ home {
   font-size: 16px;
   color: #666;
   margin: 10px 0;
-  max-width: 300px;
+  max-width: 331px;
   text-align: justify; /* 两端对齐，可以换成 text-align: left 或 center */
   line-height: 1.4;   /* 行间距 */
   margin-left: 6.5px;

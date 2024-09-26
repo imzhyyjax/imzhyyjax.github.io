@@ -115,7 +115,8 @@ header {
   font-size: 16px;
 }
 .header-nav a:hover {
-  text-decoration: underline;
+  color: #b5854c; /* 鼠标悬停时的颜色变化 */
+  text-decoration: none;
 }
 .header-nav {
   display: flex;
@@ -192,16 +193,21 @@ footer::before {
   }
   footer {
     padding: 10px 0; /* 减少页脚的内边距 */
-    font-size: 12px;
+    font-size: 8px;
   }
   .footer-item {
     margin: 8px 0; /* 缩小页脚元素的间距 */
   }
 }
 
-
-
 html {
   scroll-behavior: smooth;
 }
+
+header, footer {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box; /* 确保内边距不会影响宽度 */
+}
+
 </style>

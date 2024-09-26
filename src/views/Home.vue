@@ -99,4 +99,64 @@ home {
 .button:hover {
   background-color: #ccc;
 }
+
+/* 针对屏幕宽度小于 768px 的移动设备 */
+@media screen and (max-width: 768px) {
+  .profile-container{
+    display: flex;
+    flex-direction: column; /* 小屏幕时让内容垂直排列 */
+    align-items: center; /* 居中对齐 */
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px; /* 为小屏幕添加一些左右的内边距，防止贴边 */
+  }
+  .profile-photo{
+    width: 250px;
+    height: 250px;
+    align-items: center; /* 居中对齐 */
+    margin-top: 150px;
+  }
+  .hello{
+    font-weight: bolder;
+    font-size: 70px;
+    margin-top: 80px;
+    align-content: center; /* 居中对齐 */
+  }
+  /* 确保标题和文字不超出屏幕宽度 */
+  h1, p {
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+    margin: 0 auto;
+    padding: 0 10px; /* 防止文本太靠边 */
+  }
+
+  /* 控制按钮的宽度，使其不超过屏幕 */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 如果按钮太多，可以换行 */
+    margin: 10px 0;
+  }
+
+  .buttons button {
+    width: 100px;
+    margin: 5px;
+  }
+
+  .about-description {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0;
+  max-width: 300px;
+  text-align: justify; /* 两端对齐，可以换成 text-align: left 或 center */
+  line-height: 1.4;   /* 行间距 */
+  margin-left: 6.5px;
+}
+
+
+}
+
 </style>

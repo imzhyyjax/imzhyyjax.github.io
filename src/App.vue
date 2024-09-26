@@ -35,17 +35,17 @@
         <p class="footer-title">Email</p>
         <p>heyiyizhu@gmail.com</p>
       </div>
-      <div class="footer-item">
-        <p class="footer-title">Follow Me</p>
-        <div class="social-media">
-          <a href="https://github.com/imzhyyjax" target="_blank">
-            <font-awesome-icon :icon="['fab', 'github']" />
-          </a>
-          <a href="https://www.linkedin.com/in/%E4%BD%95%E5%A5%95%E5%A5%95-%E6%9C%B1-295a32158" target="_blank">
-            <font-awesome-icon :icon="['fab', 'linkedin']" />
-          </a>
-        </div>
-      </div>
+<!--      <div class="footer-item">-->
+<!--        <p class="footer-title">Follow Me</p>-->
+<!--        <div class="social-media">-->
+<!--          <a href="https://github.com/imzhyyjax" target="_blank">-->
+<!--            <font-awesome-icon :icon="['fab', 'github']" />-->
+<!--          </a>-->
+<!--          <a href="https://www.linkedin.com/in/%E4%BD%95%E5%A5%95%E5%A5%95-%E6%9C%B1-295a32158" target="_blank">-->
+<!--            <font-awesome-icon :icon="['fab', 'linkedin']" />-->
+<!--          </a>-->
+<!--        </div>-->
+<!--      </div>-->
     </footer>
   </div>
 </template>
@@ -89,8 +89,17 @@ header {
 }
 .header-left {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-left: 0px;
+
+  /* 针对屏幕宽度小于 768px 的移动设备 */
+  @media screen and (max-width: 768px) {
+    .header-left, .header-nav {
+      flex-direction: column; /* 让导航栏和左侧标题垂直排列 */
+      align-items: center;
+    }
+  }
 }
 .home-link {
   display: flex;

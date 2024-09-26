@@ -4,7 +4,7 @@
       <div class="profile-info">
         <p class="hello">Hello,</p>
         <p class="about-title">A Bit About Me</p>
-        <p class="about-description">Hi, I’m Jax, a second-year master’s student specializing in Natural Language Processing(NLP). I’m actively seeking PhD positions or job opportunities to further my research and career in this exciting field.</p>
+        <p class="about-description">Hi, I’m Jax, a second-year master’s student specializing in Natural Language Processing. I’m actively seeking PhD positions or job opportunities to further my research and career in this exciting field.</p>
         <div class="buttons">
           <router-link to="/resume" class="button">Resume</router-link>
           <router-link to="/projects" class="button">Projects</router-link>

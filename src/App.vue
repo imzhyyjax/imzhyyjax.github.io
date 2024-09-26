@@ -80,25 +80,6 @@ header {
   margin-left: 0px;
 }
 
-/* 针对屏幕宽度小于 768px 的移动设备 */
-@media screen and (max-width: 768px) {
-  header {
-    flex-direction: column; /* 导航栏和标题垂直排列 */
-    padding: 10px; /* 调整内边距 */
-  }
-
-  .header-left, .header-nav {
-    flex-direction: column; /* 导航栏和左侧标题垂直排列 */
-    align-items: center;
-  }
-
-  footer {
-    flex-direction: column; /* 让页脚在小屏幕下垂直排列 */
-    align-items: center;
-    padding: 10px;
-  }
-}
-
 .home-link {
   display: flex;
   align-items: center;
@@ -185,22 +166,39 @@ footer::before {
   margin-bottom: 5px;
 }
 
-img {
-  max-width: 100%; /* 确保图片不会超出父容器的宽度 */
-  height: auto;    /* 自动调整图片的高度，保持图片的比例 */
-  display: block;  /* 让图片成为块级元素，避免图片下面有不必要的间隙 */
-  border-radius: 50%; /* 使图片保持圆形 */
-  object-fit: cover; /* 保持图片内容适应容器 */
-}
-
 /* 针对屏幕宽度小于 768px 的设备 */
 @media screen and (max-width: 768px) {
-  img {
-    max-width: 90%;  /* 图片在小屏幕时最大宽度为90% */
-    margin: 0 auto;  /* 让图片居中 */
-    border-radius: 50%; /* 确保图片仍然是圆形 */
+  header {
+    flex-direction: row; /* 保持水平排列 */
+    padding: 0 30px; /* 减小左右的内边距，让布局更加紧凑 */
+  }
+  .header-left {
+    margin-left: 0px;
+  }
+  .name {
+    font-size: 16px; /* 调整字体大小 */
+  }
+  .title {
+    font-size: 14px; /* 调整副标题字体大小 */
+  }
+  .header-nav a {
+    margin: 0 8px; /* 缩小导航链接之间的间距 */
+    font-size: 14px; /* 缩小导航链接的字体 */
+  }
+  .dot {
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+  }
+  footer {
+    padding: 10px 0; /* 减少页脚的内边距 */
+    font-size: 12px;
+  }
+  .footer-item {
+    margin: 8px 0; /* 缩小页脚元素的间距 */
   }
 }
+
 
 
 html {

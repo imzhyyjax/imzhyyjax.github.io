@@ -106,16 +106,16 @@ home {
     display: flex;
     flex-direction: column; /* 小屏幕时让内容垂直排列 */
     align-items: center; /* 居中对齐 */
-    padding: 20px;
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 10px; /* 为小屏幕添加一些左右的内边距，防止贴边 */
+    box-sizing: border-box; /* 确保内边距不会影响宽度 */
   }
   .profile-photo{
     width: 250px;
     height: 250px;
-    align-items: center; /* 居中对齐 */
+    align-items: center;
     margin-top: 150px;
   }
   .hello{

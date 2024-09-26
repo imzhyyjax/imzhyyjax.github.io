@@ -35,22 +35,9 @@
         <p class="footer-title">Email</p>
         <p>heyiyizhu@gmail.com</p>
       </div>
-<!--      <div class="footer-item">-->
-<!--        <p class="footer-title">Follow Me</p>-->
-<!--        <div class="social-media">-->
-<!--          <a href="https://github.com/imzhyyjax" target="_blank">-->
-<!--            <font-awesome-icon :icon="['fab', 'github']" />-->
-<!--          </a>-->
-<!--          <a href="https://www.linkedin.com/in/%E4%BD%95%E5%A5%95%E5%A5%95-%E6%9C%B1-295a32158" target="_blank">-->
-<!--            <font-awesome-icon :icon="['fab', 'linkedin']" />-->
-<!--          </a>-->
-<!--        </div>-->
-<!--      </div>-->
     </footer>
   </div>
 </template>
-
-
 
 <script>
 export default {
@@ -77,13 +64,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 60px; /* Adjust padding to your preference */
-  margin-top: 25px; /* Ensure no margin at the top */
+  padding: 0px 60px; /* 调整内边距 */
+  margin-top: 25px;
   margin-bottom: 0;
   width: 100%;
   background-color: #fff;
-  border-bottom: none;
-  position: absolute; /* Or use fixed if you want it always on top */
+  position: absolute;
   top: 0;
   z-index: 1000;
 }
@@ -92,30 +78,42 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-left: 0px;
+}
 
-  /* 针对屏幕宽度小于 768px 的移动设备 */
-  @media screen and (max-width: 768px) {
-    .header-left, .header-nav {
-      flex-direction: column; /* 让导航栏和左侧标题垂直排列 */
-      align-items: center;
-    }
+/* 针对屏幕宽度小于 768px 的移动设备 */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column; /* 导航栏和标题垂直排列 */
+    padding: 10px; /* 调整内边距 */
+  }
+
+  .header-left, .header-nav {
+    flex-direction: column; /* 导航栏和左侧标题垂直排列 */
+    align-items: center;
+  }
+
+  footer {
+    flex-direction: column; /* 让页脚在小屏幕下垂直排列 */
+    align-items: center;
+    padding: 10px;
   }
 }
+
 .home-link {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: inherit; /* 保证链接和原始文字颜色一致 */
+  color: inherit;
 }
 
 .home-link:hover {
-  text-decoration: none; /* 悬停时添加下划线效果 */
+  text-decoration: none;
 }
 
 .dot {
   width: 10px;
   height: 10px;
-  background-color: #f4a300; /* Orange color */
+  background-color: #f4a300;
   border-radius: 50%;
   margin-right: 10px;
   margin-bottom: 1.5px;
@@ -146,39 +144,17 @@ header {
 .header-nav .router-link {
   text-decoration: none;
   color: black;
-  margin: 0 10px; /* 为了让链接之间有适当的空隙 */
+  margin: 0 10px;
   transition: color 0.3s ease;
   cursor: pointer;
 }
-.header-nav .router-link,
-.header-nav .router-link:visited,
-.header-nav .router-link:active,
-.header-nav .router-link:focus,
 .header-nav .router-link:hover {
-  text-decoration: none !important; /* 确保所有状态下没有下划线 */
-  color: black; /* 正常颜色 */
-  transition: color 0.3s ease; /* 平滑的颜色过渡 */
-}
-
-.header-nav .router-link:hover {
-  color: #b5854c; /* 悬停时的颜色 */
+  color: #b5854c;
 }
 .header-nav .divider {
   margin: 0 2px;
   color: #333;
 }
-.nav-link {
-  text-decoration: none !important;
-  color: black;
-  margin: 0 10px;
-  transition: color 0.3s ease;
-}
-.nav-link:hover {
-  color: #b5854c;
-}
-
-
-
 
 footer {
   display: flex;
@@ -195,14 +171,13 @@ footer::before {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%; /* 调整为你想要的宽度 */
-  border-top: 1px solid #ccc; /* 灰色的顶部边框 */
+  width: 80%;
+  border-top: 1px solid #ccc;
 }
-
 
 .footer-item {
   text-align: left;
-  margin: 12px 0; /* 增加项之间的间距 */
+  margin: 12px 0;
 }
 
 .footer-title {
@@ -210,19 +185,25 @@ footer::before {
   margin-bottom: 5px;
 }
 
-.social-media a {
-  margin:0 1.55px;
-  color: #333;
-  text-decoration: none;
-  font-size: 21px; /* 调整图标大小 */
+img {
+  max-width: 100%; /* 确保图片不会超出父容器的宽度 */
+  height: auto;    /* 自动调整图片的高度，保持图片的比例 */
+  display: block;  /* 让图片成为块级元素，避免图片下面有不必要的间隙 */
+  border-radius: 50%; /* 使图片保持圆形 */
+  object-fit: cover; /* 保持图片内容适应容器 */
 }
 
-.social-media a:hover {
-  text-decoration: underline;
+/* 针对屏幕宽度小于 768px 的设备 */
+@media screen and (max-width: 768px) {
+  img {
+    max-width: 90%;  /* 图片在小屏幕时最大宽度为90% */
+    margin: 0 auto;  /* 让图片居中 */
+    border-radius: 50%; /* 确保图片仍然是圆形 */
+  }
 }
+
 
 html {
   scroll-behavior: smooth;
 }
-
 </style>

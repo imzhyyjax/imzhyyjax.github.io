@@ -12,7 +12,7 @@
       <nav class="header-nav">
         <router-link to="/resume" class="nav-link">Resume</router-link>
         <span class="divider">|</span>
-        <router-link to="/projects" class="nav-link">Projects</router-link>
+        <router-link to="/publication" class="nav-link">Publication</router-link>
         <span class="divider">|</span>
         <!-- Contact 链接指向锚点 -->
         <a href="#contact" class="nav-link">Contact</a>

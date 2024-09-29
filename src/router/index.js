@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../views/Home.vue'  // 改为 HomePage
 import ResumePage from '../views/Resume.vue'
 import ContactPage from '../views/Contact.vue'
-import ProjectsPage from '../views/Projects.vue'
+import PublicationPage from '../views/Publication.vue'
 
 const routes = [
   {
@@ -21,9 +21,9 @@ const routes = [
     component: ContactPage
   },
   {
-    path: '/projects',
-    name: 'Projects',
-    component: ProjectsPage
+    path: '/publication',
+    name: 'Publication',
+    component: PublicationPage
   }
 ]
 

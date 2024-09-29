@@ -1,6 +1,6 @@
 <template>
   <div class="resume-container">
-    <h1 class="resume-title">Projects</h1> <!-- Resume 标题放在这里 -->
+    <h1 class="resume-title">Publication</h1> <!-- Resume 标题放在这里 -->
 
     <div class="resume-content">
       <div class="resume-left">
@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'ProjectsPage',
+  name: 'PublicationPage',
 }
 </script>
 

@@ -177,14 +177,14 @@ footer::before {
     margin-left: 0px;
   }
   .name {
-    font-size: 16px; /* 调整字体大小 */
+    font-size: 14px; /* 调整字体大小 */
   }
   .title {
-    font-size: 14px; /* 调整副标题字体大小 */
+    font-size: 12px; /* 调整副标题字体大小 */
   }
   .header-nav a {
     margin: 0 8px; /* 缩小导航链接之间的间距 */
-    font-size: 14px; /* 缩小导航链接的字体 */
+    font-size: 12px; /* 缩小导航链接的字体 */
   }
   .dot {
     width: 8px;
